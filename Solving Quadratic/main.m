@@ -1,24 +1,12 @@
 //
 //  main.m
-//  FirstiOS
+//  Solving Quadratic Equation
 //
-//  Created by iTD on 6/7/16.
-//  Copyright © 2016 iTD. All rights reserved.
+//  Created by Nam Anh Chu on 6/7/16.
+//  Copyright © 2016 Nam Anh Chu. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
-int diemtoan=10;
-void Diem()
-{
-    int diemtoan=10;
-    diemtoan++;
-}
-
-void Run()
-{
-    diemtoan++;
-}
 
 void Giaipt(float a,float b,float c)
 {
