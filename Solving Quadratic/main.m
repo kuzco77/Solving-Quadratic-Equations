@@ -12,25 +12,36 @@ void Giaipt(float a,float b,float c)
 {
     if (a==0)
     {
-        if (b==0) printf("%f",-c/b);
+        if (b==0)
+        {
+            if (c==0) NSLog(@"Phuong trinh co vo so nghiem");
+            else NSLog(@"Phuong trinh vo nghiem");
+        }
+        
+        else
+        {
+            NSLog(@"Phuong trinh co 1 nghiem la : %.2f",-c/b);
+        }
     }
     
     else
     {
         float delta = b*b - 4*a*c;
-        if (delta < 0) printf ("Khong co");
-        if (delta==0) printf ("%f",-b/(2*a));
-        if (delta>0) printf ("%f",(-b + sqrt(delta))/(2*a));
+        if (delta < 0) NSLog (@"Phuong trinh vo nghiem");
+        if (delta == 0) NSLog (@"Phuong trinh co nghiem kep la : %.2f",-b/(2*a));
+        if (delta > 0) NSLog (@"Phuong trinh co 2 nghiem : %.2f va %.2f",(-b + sqrt(delta))/(2*a)
+                                                                    ,(-b - sqrt(delta))/(2*a));
     }
 }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        float x,y,z;
+        NSLog(@"Nhap vao a,b,c");
+        scanf(" %f %f %f ",&x,&y,&z);
+        NSLog(@"Cac so vua nhap : %f %f %f ",x,y,z);
+        Giaipt(x, y, z);
     }
-    int haha=10;
-    printf("%d",haha);
-    printf("Cha biet viet cai gi\n");
     return 0;
 }
