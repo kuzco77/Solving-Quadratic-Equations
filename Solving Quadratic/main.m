@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
         // insert code here...
         float x,y,z;
         NSLog(@"Nhap vao a,b,c");
-        scanf(" %f %f %f ",&x,&y,&z);
+        scanf(" %f %f %f ",&x,&y,&z); // Khong hieu sao phai nhap 4 so ?
         NSLog(@"Cac so vua nhap : %f %f %f ",x,y,z);
         Giaipt(x, y, z);
     }
